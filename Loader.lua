@@ -61,7 +61,7 @@ local Cast = false
 
 -- Window Setup
 local Window = Fluent:CreateWindow({
-    Title = "[🐟] Fisch | lyxme Hub 11 November 2024",
+    Title = "[🏴‍☠️] Fisch | lyxme Hub",
     SubTitle = "",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
@@ -77,9 +77,6 @@ local Window = Fluent:CreateWindow({
 -- Tabs
 local Tabs = {
     Genaral = Window:AddTab({ Title = "Genaral", Icon = "home" }),
-    Merchant = Window:AddTab({ Title = "Merchant", Icon = "shopping-cart" }),
-    Gift = Window:AddTab({ Title = "Gift", Icon = "gift" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
 Window:SelectTab(Tabs.Main)
@@ -99,7 +96,7 @@ end
 
 -- Main Tab Elements
 local autoShakeToggle = Tabs.Genaral:AddToggle("AutoShake", {
-    Title = "Auto Shake",
+    Title = "Fast Shake",
     Default = false,
     Callback = function(Value)
         autoShake = Value
